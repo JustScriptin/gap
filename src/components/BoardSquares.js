@@ -1,7 +1,11 @@
 import React from "react";
 
-function BoardSquares() {
-  return <div></div>;
+function BoardSquares(props) {
+  return (
+    <button className="boardSquaresButton" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
 }
 
 export default BoardSquares;
