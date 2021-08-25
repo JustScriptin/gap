@@ -8,6 +8,7 @@ function TicTacToe() {
   const squares = Array(9).fill(null);
   return (
     <div>
+      <h1>This is Tic Tac Toe</h1>
       <div className="ticTacToeBoard">
         <Board squares={squares}></Board>
       </div>
