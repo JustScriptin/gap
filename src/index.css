@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f13371;
+}
+
+.board > div {
+  display: flex;
+}
+
+.boardSquaresButton {
+  background-color: #e9e1da;
+  color: #adff9b;
+  margin: 16px;
+  width: 95px;
+  height: 85px;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 55px;
+  cursor: pointer;
+  position: relative;
+  top: 0;
+}
+
+.boardSquaresButton:hover {
+  background-color: #d6cfc8;
+}
+
+.ticTacToeOptions {
+  margin: 12px;
+  color: #e9e1da;
+}
+
+.ticTacToeBoard {
+  display: flex;
+  flex-wrap: wrap;
 }
