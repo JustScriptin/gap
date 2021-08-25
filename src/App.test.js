@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import App from "./App";
-import { shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 
 //shallow only renders the component but not the childeren
 //to console log the contents of a shallow wrapper you can use console.log(wrapper.debug())
@@ -8,7 +8,8 @@ import { shallow } from "enzyme";
 describe("Playing with Jest", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    wrapper = shallow(<App />); //put any component you want to test in the parameters of shallow
+    // if you want to look into children as well then use mount instead of shallow
   });
 
   test("render the title of counter", () => {
