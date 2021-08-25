@@ -1,5 +1,5 @@
 import React from "react";
-import BoardSquares from "./../BoardSquares/BoardSquares";
+import BoardSquares from "../BoardSquares/BoardSquares";
 
 function Board(props) {
   return (

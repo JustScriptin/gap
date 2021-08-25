@@ -1,10 +1,10 @@
-import { mount } from "enzyme";
+import { shallow } from "enzyme";
 import TicTacToe from "./TicTacToe";
 
 describe("TicTacToe Component", () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = mount(<TicTacToe />);
+    wrapper = shallow(<TicTacToe />);
   });
 
   it("Board component Exists", () => {
